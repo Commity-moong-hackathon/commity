@@ -115,7 +115,7 @@ body {
 }
 
 .graph-img {
-  width: 55px;
+  width: 69px;
   height: 575px;
 }
 
@@ -127,15 +127,15 @@ body {
 
 .commit-list li {
   font-size: 12px;
-  margin-bottom: 17px;
+  margin-bottom: 15px;
   display: flex;
   align-items: center;
   gap: 6px;
 }
 
 .commit-list .dot {
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
 }
 
