@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="desktop">
+      <div class="group">
+        <div class="overlap-group">
+          <div class="text-wrapper">Commity</div>
+          <div class="ellipse"></div>
+          <div class="div"></div>
+        </div>
+      </div>
+      <div class="text-wrapper-2">대쉬보드</div>
+      <div class="text-wrapper-3">깃 컨벤션 추천 받기</div>
+      <div class="text-wrapper-4">리드미 제작하기</div>
+      <div class="overlap">
+        <div class="text-wrapper-5">Members</div>
+        <div class="overlap-2">
+          <div class="overlap-wrapper">
+            <div class="overlap-3">
+              <a href="mailto:dldmswl@inha.edu" target="_blank" rel="noopener noreferrer"
+                ><div class="text-wrapper-6">dldmswl@inha.edu</div></a
+              >
+              <div class="overlap-group-2">
+                <div class="text-wrapper-7">이은지</div>
+                <div class="text-wrapper-7">이은지</div>
+              </div>
+              <div class="text-wrapper-8">/ BE</div>
+            </div>
+          </div>
+          <div class="overlap-group-wrapper">
+            <div class="overlap-3">
+              <div class="text-wrapper-6">jis12214194@inha.edu</div>
+              <div class="text-wrapper-9">전인서</div>
+              <div class="text-wrapper-8">/ PM</div>
+            </div>
+          </div>
+          <div class="text-wrapper-10">🐢</div>
+        </div>
+        <div class="overlap-4">
+          <div class="div-wrapper">
+            <div class="overlap-3">
+              <div class="text-wrapper-6">yhnham2000@inha.edu</div>
+              <div class="BE">남윤혁 / BE</div>
+            </div>
+          </div>
+          <div class="text-wrapper-11">🥔</div>
+        </div>
+        <div class="overlap-5">
+          <div class="overlap-group-wrapper">
+            <div class="overlap-3">
+              <div class="text-wrapper-6">rmsidthgusdl81@inha.edu</div>
+              <div class="text-wrapper-9">권소현</div>
+              <div class="text-wrapper-12">/ FE</div>
+            </div>
+          </div>
+          <div class="text-wrapper-11">🐯</div>
+        </div>
+        <div class="overlap-6">
+          <div class="group-2">
+            <div class="overlap-7">
+              <div class="text-wrapper-6">aries030414@inha.edu</div>
+              <div class="text-wrapper-9">조수빈</div>
+              <div class="text-wrapper-12">/ Designer</div>
+            </div>
+          </div>
+          <div class="text-wrapper-13">🐸</div>
+        </div>
+      </div>
+      <div class="group-3">
+        <div class="overlap-8">
+          <div class="ellipse-2"></div>
+          <img class="image" src="img/image-62.png" />
+        </div>
+      </div>
+      <div class="overlap-9">
+        <div class="september">&gt;&gt; September 2024</div>
+        <div class="navbar">
+          <div class="text-wrapper-14">7</div>
+          <div class="text-wrapper-15">6</div>
+          <div class="text-wrapper-16">9</div>
+          <div class="text-wrapper-17">10</div>
+          <div class="text-wrapper-18">11</div>
+          <div class="text-wrapper-19">12</div>
+          <div class="text-wrapper-20">13</div>
+          <div class="text-wrapper-21">14</div>
+          <div class="text-wrapper-22">15</div>
+          <div class="text-wrapper-23">16</div>
+          <div class="text-wrapper-24">17</div>
+          <div class="text-wrapper-25">18</div>
+          <div class="text-wrapper-26">19</div>
+          <div class="text-wrapper-27">20</div>
+          <div class="text-wrapper-28">21</div>
+          <div class="text-wrapper-29">22</div>
+          <div class="text-wrapper-30">23</div>
+          <div class="text-wrapper-31">24</div>
+          <div class="text-wrapper-32">8</div>
+        </div>
+        <div class="overlap-10">
+          <div class="group-4">
+            <div class="overlap-11"><div class="text-wrapper-33">🥔</div></div>
+          </div>
+          <div class="group-5">
+            <div class="overlap-12">
+              <img class="line" src="img/line-26.svg" /> <img class="img" src="img/line-27.svg" />
+            </div>
+          </div>
+        </div>
+        <div class="group-wrapper">
+          <div class="group-6">
+            <div class="overlap-11"><div class="text-wrapper-33">🐯</div></div>
+          </div>
+        </div>
+        <div class="overlap-13">
+          <div class="group-7">
+            <div class="overlap-11"><div class="text-wrapper-34">🥑</div></div>
+          </div>
+          <div class="group-8">
+            <div class="overlap-11"><div class="text-wrapper-33">🥔</div></div>
+          </div>
+        </div>
+        <div class="overlap-14">
+          <div class="group-9">
+            <div class="overlap-11"><div class="text-wrapper-34">🥑</div></div>
+          </div>
+        </div>
+        <div class="overlap-15">
+          <div class="group-10">
+            <div class="overlap-11"><div class="text-wrapper-35">🍄</div></div>
+          </div>
+        </div>
+        <div class="overlap-16">
+          <div class="group-11">
+            <div class="overlap-11"><div class="text-wrapper-33">🐯</div></div>
+          </div>
+          <div class="group-12">
+            <div class="overlap-12">
+              <img class="line" src="img/image.svg" /> <img class="line-2" src="img/line-27-2.svg" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-wrapper-36">일정 관리표</div>
+      <img class="rectangle" src="img/rectangle-413.svg" />
+      <img class="ellipse-3" src="img/ellipse-84.svg" />
+      <div class="overlap-17">
+        <div class="overlap-18">
+          <div class="group-13">
+            <div class="overlap-19">
+              <div class="text-wrapper-37">조수빈/Designer</div>
+              <div class="element">2024-09-07&nbsp;&nbsp;02:11:39</div>
+            </div>
+            <p class="figma">
+              <span class="span">@총무</span>
+              <span class="text-wrapper-38"> 총무님! Figma 엔터프라이즈 요금제 결제 부탁 드립니다! </span>
+            </p>
+            <div class="group-14">
+              <div class="ellipse-4"></div>
+              <div class="ellipse-5"></div>
+              <div class="ellipse-6"></div>
+            </div>
+            <div class="group-15">
+              <div class="overlap-group-3"><div class="text-wrapper-35">🐸</div></div>
+            </div>
+          </div>
+        </div>
+        <div class="overlap-20">
+          <div class="group-16">
+            <div class="overlap-group-3"><div class="text-wrapper-33">🐯</div></div>
+          </div>
+          <div class="text-wrapper-39">권소현/FE</div>
+          <div class="overlap-21">
+            <div class="text-wrapper-37">남윤혁/BE</div>
+            <div class="element-2">2024-09-08&nbsp;&nbsp;18:44:12</div>
+          </div>
+          <div class="overlap-22">
+            <div class="text-wrapper-37">남윤혁/BE</div>
+            <div class="element-3">2024-09-08&nbsp;&nbsp;18:06:41</div>
+          </div>
+          <p class="p">백엔드 분들 지금 서버 터졌죠?<br />작업이 불가능해요 고쳐주세요. ^^</p>
+          <p class="text-wrapper-40">아 넵. 금방 수정하겠습니다 ^^;;</p>
+          <img class="line-3" src="img/line-24.svg" />
+          <img class="group-17" src="img/group-180.png" />
+          <p class="text-wrapper-41">소현님, 서버 안 터졌어요. ‘프론트’ 문제 같은데 확인해주세요!</p>
+          <div class="group-18">
+            <div class="overlap-group-3"><div class="text-wrapper-33">🥔</div></div>
+          </div>
+          <div class="overlap-23">
+            <div class="text-wrapper-42">팀원들과 공유할 메모를 남겨주세요.</div>
+            <div class="text-wrapper-42">팀원들과 공유할 메모를 남겨주세요.</div>
+          </div>
+          <div class="overlap-24"><div class="text-wrapper-43">입력</div></div>
+          <div class="group-19">
+            <div class="overlap-group-3"><div class="text-wrapper-33">🐯</div></div>
+          </div>
+          <div class="overlap-25">
+            <div class="text-wrapper-37">권소현/FE</div>
+            <div class="element-3">2024-09-08&nbsp;&nbsp;16:33:24</div>
+          </div>
+        </div>
+      </div>
+      <div class="overlap-26">
+        <div class="rectangle-2"></div>
+        <div class="group-20">
+          <div class="text-wrapper-44">Progress</div>
+          <div class="overlap-27">
+            <div class="ellipse-wrapper"><img class="ellipse-7" src="img/ellipse-85.svg" /></div>
+            <div class="text-wrapper-45">20</div>
+            <div class="text-wrapper-46">30</div>
+            <div class="text-wrapper-47">70</div>
+            <div class="text-wrapper-48">80</div>
+            <div class="ellipse-wrapper"><img class="ellipse-8" src="img/ellipse-85-2.svg" /></div>
+            <div class="rectangle-3"></div>
+            <div class="text-wrapper-49">60%</div>
+          </div>
+          <div class="text-wrapper-50">0</div>
+          <div class="text-wrapper-51">10</div>
+          <div class="text-wrapper-52">40</div>
+          <div class="text-wrapper-53">50</div>
+          <div class="text-wrapper-54">60</div>
+          <div class="text-wrapper-55">90</div>
+          <div class="text-wrapper-56">100</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
