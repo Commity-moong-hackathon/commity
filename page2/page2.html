@@ -1,187 +1,173 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8" />
-  <link rel="stylesheet" href="../globals.css" />
-  <link rel="stylesheet" href="./page2.css" />
-</head>
-<body>
-  <div class="desktop">
-    <div class="overlap">
-      <div class="view"></div>
-      <img class="element" src="../img/branch.png" />
-      <div class="group">
-        <div class="overlap-group">
-          <div class="div">
-            <div class="group-2">
-              
-              <div class="item" style="top: 0px;">
-                <div class="dot blue"></div>
-                <p>feat: add user authentication feature</p>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./page2.css" />
+    <title>Commity - Dashboard</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="logo">Commity<span class="dot"></span></div>
+        <nav class="nav">
+          <a href="../page3/page3.html" class="nav-item">대쉬보드</a>
+          <a href="#" class="nav-item">깃 컨벤션 추천 받기</a>
+          <a href="#" class="nav-item">리드미 제작하기</a>
+        </nav>
+        <div class="profile">
+          <img src="../img/person.png" alt="Profile" class="profile-img" />
+        </div>
+      </header>
+
+      <section class="main">
+        <!-- Left -->
+        <div class="left-panel">
+          <div class="welcome">
+            <p class="welcome-text">
+              돌아오셨군요 🥳<br />
+              <strong
+                >malgamii의 <span class="bold">Commity</span> 입니다.</strong
+              >
+            </p>
+          </div>
+
+          <div class="branch-select">
+            <label for="branch-dropdown">브랜치를 선택해주세요 </label>
+            <select id="branch-dropdown" class="branch-dropdown">
+              <option value="main">main</option>
+              <option value="develop">develop</option>
+              <option value="feature/login">feature/login</option>
+              <option value="hotfix/error">hotfix/error</option>
+            </select>
+          </div>
+
+          <div class="graph-box">
+            <img src="../img/branch.png" class="graph-img" />
+            <ul class="commit-list">
+              <li>
+                <span class="dot blue"></span> feat: add user authentication
+                feature
+              </li>
+              <li>
+                <span class="dot green"></span> fix: resolve crash issue on
+                login screen
+              </li>
+              <li>
+                <span class="dot red"></span> docs: update README with new setup
+                instructions
+              </li>
+              <li>
+                <span class="dot purple"></span> style: reformat codebase using
+                Prettier
+              </li>
+              <li>
+                <span class="dot yellow"></span> refactor: simplify API request
+                handling
+              </li>
+              <li>
+                <span class="dot blue"></span> test: add unit tests for
+                authentication service
+              </li>
+              <li>
+                <span class="dot gray"></span> chore: remove unused dependencies
+              </li>
+              <li>
+                <span class="dot blue"></span> feat: implement dark mode toggle
+              </li>
+              <li>
+                <span class="dot green"></span> fix: correct typo in error
+                message
+              </li>
+              <li>
+                <span class="dot red"></span> docs: add API documentation for
+                user endpoints
+              </li>
+              <li>
+                <span class="dot purple"></span> style: fix indentation issues
+                in CSS
+              </li>
+              <li>
+                <span class="dot yellow"></span> refactor: optimize image
+                loading performance
+              </li>
+              <li>
+                <span class="dot blue"></span> test: improve test coverage for
+                user profile component
+              </li>
+              <li>
+                <span class="dot gray"></span> chore: update CI configuration
+                for faster builds
+              </li>
+              <li>
+                <span class="dot blue"></span> feat: add search functionality to
+                navbar
+              </li>
+              <li>
+                <span class="dot green"></span> fix: address memory leak in data
+                processing module
+              </li>
+              <li>
+                <span class="dot red"></span> docs: create contribution guide
+                for new developers
+              </li>
+              <li>
+                <span class="dot purple"></span> style: update button styles to
+                match design system
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Right -->
+        <div class="right-panel">
+          <div class="diff-file">
+            <div class="diff-header">
+              <div class="diff-title">
+                <h2>Diff File</h2>
+                <div class="diff-feature">
+                  <span class="dot blue"></span>
+                  <span class="feature-text"
+                    >feat: add user authentication feature</span
+                  >
+                </div>
               </div>
-              
-              <div class="item" style="top: 30px;">
-                <div class="dot green"></div>
-                <p>fix: resolve crash issue on login screen</p>
+              <span class="commit-id">commit id: <a href="#">b2e1771</a></span>
+            </div>
+
+            <div class="diff-content">
+              <img src="../img/diff_file.png" class="diff-img" />
+            </div>
+          </div>
+
+          <div class="commit-summary">
+            <h2>Commit Summary</h2>
+            <div class="commit-cards">
+              <div class="card">
+                <div class="card-date">2025.03.24</div>
+                <p class="card-text">
+                  🐛 로그인 시 오류가 발생하던 문제를 수정했어요!<br />이제 더
+                  매끄럽게 로그인할 수 있어요👏
+                </p>
               </div>
-              
-              <div class="item" style="top: 60px;">
-                <div class="dot red"></div>
-                <p>docs: update README with new setup instructions</p>
+              <div class="card">
+                <div class="card-date">2025.03.24</div>
+                <p class="card-text">
+                  📕 README 파일을 업데이트했어요!<br />환경 설정 방법이 한눈에
+                  보이게 정리했어요
+                </p>
               </div>
-              
-              <div class="item" style="top: 90px;">
-                <div class="dot purple"></div>
-                <p>style: reformat codebase using Prettier</p>
-              </div>
-              
-              <div class="item" style="top: 120px;">
-                <div class="dot yellow"></div>
-                <p>refactor: simplify API request handling</p>
-              </div>
-              
-              <div class="item" style="top: 150px;">
-                <div class="dot blue"></div>
-                <p>test: add unit tests for authentication service</p>
-              </div>
-              
-              <div class="item" style="top: 180px;">
-                <div class="dot gray"></div>
-                <p>chore: remove unused dependencies</p>
-              </div>
-              
-              <div class="item" style="top: 210px;">
-                <div class="dot blue"></div>
-                <p>feat: implement dark mode toggle</p>
-              </div>
-              
-              <div class="item" style="top: 240px;">
-                <div class="dot green"></div>
-                <p>fix: correct typo in error message</p>
-              </div>
-              
-              <div class="item" style="top: 270px;">
-                <div class="dot red"></div>
-                <p>docs: add API documentation for user endpoints</p>
-              </div>
-              
-              <div class="item" style="top: 300px;">
-                <div class="dot purple"></div>
-                <p>style: fix indentation issues in CSS</p>
-              </div>
-              
-              <div class="item" style="top: 330px;">
-                <div class="dot yellow"></div>
-                <p>refactor: optimize image loading performance</p>
-              </div>
-              
-              <div class="item" style="top: 360px;">
-                <div class="dot blue"></div>
-                <p>test: improve test coverage for user profile component</p>
-              </div>
-              
-              <div class="item" style="top: 390px;">
-                <div class="dot gray"></div>
-                <p>chore: update CI configuration for faster builds</p>
-              </div>
-              
-              <div class="item" style="top: 420px;">
-                <div class="dot blue"></div>
-                <p>feat: add search functionality to navbar</p>
-              </div>
-              
-              <div class="item" style="top: 450px;">
-                <div class="dot green"></div>
-                <p>fix: address memory leak in data processing module</p>
-              </div>
-              
-              <div class="item" style="top: 480px;">
-                <div class="dot red"></div>
-                <p>docs: create contribution guide for new developers</p>
-              </div>
-              
-              <div class="item" style="top: 510px;">
-                <div class="dot purple"></div>
-                <p>style: update button styles to match design system</p>
-              </div>
+              <div class="card">
+                <div class="card-date">2025.03.24</div>
+                <p class="card-text">
+                  🛠️ 설정 페이지 UI를 새롭게 다듬었어요!<br />더 깔끔하고 보기
+                  쉬워졌어요👏
+                </p>
               </div>
             </div>
           </div>
         </div>
-        <div class="ellipse"></div>
-      </div>
-      <div class="overlap-2">
-        <div class="malgamii">
-          돌아오셨군요 🥳<br />malgamii의&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;입니다.
-        </div>
-        <div class="overlap-wrapper">
-          <div class="overlap-3">
-            <div class="text-wrapper-18">Commity</div>
-            <div class="ellipse-2"></div>
-            <div class="ellipse-3"></div>
-          </div>
-        </div>
-      </div>
-      
-      <div class="overlap-4">
-        <div class="text-wrapper-19">Diff File</div>
-        <div class="overlap-group-wrapper">
-          <div class="overlap-5">
-            <p class="text-wrapper-20">feat: add user authentication feature</p>
-            <div class="ellipse-4"></div>
-          </div>
-        </div>
-        <img class="diff-image" src="../img/diff_file.png" />
-      </div>
-      <div class="text-wrapper-21">Commit Summary</div>
-      <p class="commit-id">
-        <span class="span">commit id: </span>
-        <span class="text-wrapper-22">b2e1771</span>
-      </p>
-      <div class="overlap-6">
-        <div class="text-wrapper-23">Branch</div>
-        <img class="line" src="img/line-25.svg" />
-        <div class="div-wrapper">
-          <div class="overlap-7">
-            <img class="line-2" src="../img/arrow_down.png" />
-          </div>
-        </div>
-      </div>
-      <div class="overlap-8">
-        <p class="text-wrapper-24">
-          🐛로그인 시 오류가 발생하던 문제를 <br />수정했어요! <br />이제 더
-          매끄럽게 로그인할 수 있어요👏
-        </p>
-      </div>
-      <div class="text-wrapper-25">2025.03.24</div>
-      <div class="README-wrapper">
-        <p class="README">
-          📕README 파일을 업데이트했어요!<br />환경 설정 방법이 한눈에 보이게
-          정리했어요
-        </p>
-      </div>
-      <div class="text-wrapper-26">2025.03.24</div>
-      <div class="UI-wrapper">
-        <p class="UI">
-          🛠️ 설정 페이지 UI를 새롭게 다듬었어요!<br /> 더 깔끔하고 보기 쉬워졌어요👏
-        </p>
-      </div>
-      <div class="text-wrapper-27">2025.03.24</div>
-      <div class="group-5">
-        <div class="overlap-9">
-          <div class="text-wrapper-28">Commity</div>
-          <div class="ellipse-5"></div>
-          <div class="ellipse-6"></div>
-        </div>
-      </div>
-      <div class="group-6">
-        <div class="overlap-10">
-          <img class="image" src="../img/person.png" />
-        </div>
-      </div>
-      <div class="text-wrapper-29">대쉬보드</div>
-      <div class="text-wrapper-30">깃 컨벤션 추천 받기</div>
-      <div class="text-wrapper-31">리드미 제작하기</div>
+      </section>
     </div>
   </body>
 </html>
