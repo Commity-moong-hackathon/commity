@@ -108,7 +108,7 @@ body {
 .graph-box {
   background: white;
   border-radius: 20px;
-  padding: 20px;
+  padding: 10px;
   box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.15);
   display: flex;
   align-items: flex-start;
@@ -277,6 +277,7 @@ body {
 .commit-cards {
   display: flex;
   gap: 20px;
+  margin-bottom: 60px;
 }
 
 .card {
