@@ -178,7 +178,7 @@ body {
 .pink-circle {
   width: 24px;
   height: 24px;
-  background-color: rgba(241, 80, 47, 0.4);
+  background-color: rgba(241, 80, 47, 0.2);
   border-radius: 50%;
   display: flex;
   align-items: center;
