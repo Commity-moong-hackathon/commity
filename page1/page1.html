@@ -1,181 +1,130 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
   <head>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="../globals.css" />
-    <link rel="stylesheet" href="./page1.css" />
+    <meta charset="UTF-8" />
+    <title>Commity Dashboard</title>
+    <link rel="stylesheet" href="page1.css" />
   </head>
   <body>
-    <div class="desktop">
-      <div class="text-wrapper">대쉬보드</div>
-      <div class="div">깃 컨벤션 추천 받기</div>
-      <div class="text-wrapper-2">리드미 제작하기</div>
-      <div class="text-wrapper-3">추가할 프로젝트에 대해 작성해주세요</div>
-      <div class="overlap">
-        <p class="element">
-          <span class="span">프로젝트명을 20자이내로 입력하세요. </span>
-          <span class="text-wrapper-4">*</span>
-          <span class="span">&nbsp;</span>
-        </p>
-      </div>
-      <div class="overlap-group">
-        <div class="rectangle"></div>
-        <p class="git-repository">
-          <span class="span">연결할 Git Repository 주소를 작성해주세요. </span>
-          <span class="text-wrapper-4">*</span>
-          <span class="span">&nbsp;</span>
-        </p>
-      </div>
-      <div class="div-wrapper">
-        <div class="text-wrapper-5">프로젝트에 대한 설명을 작성해주세요.</div>
-      </div>
-      <div class="group">
-        <div class="overlap-group-wrapper">
-          <div class="overlap-group-2">
-            <div class="text-wrapper-6">프로젝트 추가하기</div>
-          </div>
+    <div class="container">
+      <header class="header">
+        <div class="logo">Commity</div>
+        <nav class="nav-menu">
+          <div class="menu-item">대쉬보드</div>
+          <div class="menu-item">깃 컨벤션 추천 받기</div>
+          <div class="menu-item">리드미 제작하기</div>
+        </nav>
+        <div class="profile">
+          <img src="../img/person.png" alt="Profile" class="profile-img" />
+          <div class="notification-dot"></div>
         </div>
-      </div>
-      <div class="malgamii">
-        <div class="overlap-2">
-          <div class="logo">
-            <img class="plant-on-hand" src="img/image.png" />
-          </div>
-          <div class="text-wrapper-7">Malgamii</div>
-          <p class="forked-from-malgamii">
-            <span class="text-wrapper-8">Forked from </span>
-            <span class="text-wrapper-9">Malgamii</span>
-            <span class="text-wrapper-8">&nbsp;</span>
-          </p>
-          <div class="group-2">
-            <div class="overlap-group-3">
-              <div class="text-wrapper-10">Public</div>
-            </div>
-          </div>
-          <div class="group-3">
-            <div class="ellipse"></div>
-            <div class="text-wrapper-11">JavaScript</div>
-          </div>
-          <div class="group-4">
-            <div class="ellipse-2"></div>
-            <div class="text-wrapper-12">Java</div>
-          </div>
-          <div class="group-5">
-            <div class="ellipse-3"></div>
-            <div class="text-wrapper-13">Python</div>
-          </div>
-        </div>
-      </div>
-      <div class="devocean">
-        <div class="overlap-2">
-          <div class="logo-2"></div>
-          <div class="text-wrapper-14">DEVOCEAN</div>
-          <p class="p">
-            <span class="text-wrapper-8">Forked from </span>
-            <span class="text-wrapper-9">SKDEVOCEAN/DEVOCEAN</span>
-          </p>
-          <div class="group-2">
-            <div class="overlap-group-3">
-              <div class="text-wrapper-10">Public</div>
-            </div>
-          </div>
-          <div class="group-3">
-            <div class="ellipse"></div>
-            <div class="text-wrapper-11">JavaScript</div>
-          </div>
-          <div class="group-4">
-            <div class="ellipse-2"></div>
-            <div class="text-wrapper-12">Java</div>
-          </div>
-          <div class="group-6">
-            <div class="ellipse-4"></div>
-            <div class="text-wrapper-12">CSS</div>
-          </div>
-        </div>
-      </div>
-      <div class="tech-lock">
-        <div class="overlap-2">
-          <div class="logo-3">
-            <div class="overlap-group-4">
-              <div class="rectangle-2"></div>
-              <img class="img" src="img/plant-on-hand-1.png" />
-              <img class="image" src="img/image-1.png" />
-            </div>
-          </div>
-          <div class="text-wrapper-14">TECH-LOCK</div>
-          <p class="p">
-            <span class="text-wrapper-8">Forked from </span>
-            <span class="text-wrapper-9">TECH_LOCK</span>
-          </p>
-          <div class="group-2">
-            <div class="overlap-group-3">
-              <div class="text-wrapper-10">Public</div>
-            </div>
-          </div>
-          <div class="group-3">
-            <div class="ellipse"></div>
-            <div class="text-wrapper-11">JavaScript</div>
-          </div>
-          <div class="group-4">
-            <div class="ellipse-2"></div>
-            <div class="text-wrapper-12">Java</div>
-          </div>
-          <div class="group-5">
-            <div class="ellipse-3"></div>
-            <div class="text-wrapper-13">Python</div>
-          </div>
-        </div>
-      </div>
-      <div class="nuauna">
-        <div class="group-wrapper">
-          <div class="overlap-wrapper">
-            <div class="overlap-2">
-              <div class="logo-4"></div>
-              <div class="text-wrapper-7">NUGUNA</div>
-              <p class="forked-from-nuguna">
-                <span class="text-wrapper-8">Forked from </span>
-                <span class="text-wrapper-9">nuguna </span>
-              </p>
-              <div class="group-2">
-                <div class="overlap-group-3">
-                  <div class="text-wrapper-10">Public</div>
+      </header>
+
+      <main class="main">
+        <section class="new-project">
+          <h2>새 프로젝트</h2>
+          <p class="section-desc">추가할 프로젝트에 대해 작성해주세요</p>
+
+          <input
+            class="input-field project-name"
+            type="text"
+            placeholder="프로젝트명을 20자 이내로 입력하세요. *"
+          />
+          <input
+            class="input-field git-repo"
+            type="text"
+            placeholder="연결할 Git Repository 주소를 작성해주세요. *"
+          />
+          <textarea
+            class="textarea-field project-desc"
+            placeholder="프로젝트에 대한 설명을 작성해주세요."
+          ></textarea>
+
+          <button class="add-project-btn disabled" disabled>
+            프로젝트 추가하기
+          </button>
+        </section>
+
+        <section class="my-projects">
+          <h2>나의 프로젝트</h2>
+
+          <div class="project-list" id="project-list">
+            <a href="../page2/page2.html" class="project-card" target="_blank">
+              <div class="project-logo">
+                <img src="../img/magamii_logo.png" alt="Malgamii" />
+              </div>
+              <div class="project-info">
+                <div class="project-header">
+                  <h3>Malgamii</h3>
+                  <span class="public-badge">Public</span>
+                </div>
+                <p class="forked-from">Forked from <u>Malgamii</u></p>
+                <div class="tech-stack">
+                  <span class="tech javascript">JavaScript</span>
+                  <span class="tech java">Java</span>
+                  <span class="tech python">Python</span>
                 </div>
               </div>
-              <div class="group-3">
-                <div class="ellipse"></div>
-                <div class="text-wrapper-11">JavaScript</div>
+            </a>
+
+            <a href="../page2/page2.html" class="project-card" target="_blank">
+              <div class="project-logo">
+                <img src="../img/techlock_logo.png" alt="TECH-LOCK" />
               </div>
-              <div class="group-4">
-                <div class="ellipse-2"></div>
-                <div class="text-wrapper-12">Java</div>
+              <div class="project-info">
+                <div class="project-header">
+                  <h3>TECH-LOCK</h3>
+                  <span class="public-badge">Public</span>
+                </div>
+                <p class="forked-from">Forked from <u>TECH_LOCK</u></p>
+                <div class="tech-stack">
+                  <span class="tech javascript">JavaScript</span>
+                  <span class="tech java">Java</span>
+                  <span class="tech python">Python</span>
+                </div>
               </div>
-              <div class="group-5">
-                <div class="ellipse-3"></div>
-                <div class="text-wrapper-13">Python</div>
+            </a>
+
+            <a href="../page2/page2.html" class="project-card" target="_blank">
+              <div class="project-logo">
+                <img src="../img/branchify_logo.png" alt="Branchify" />
               </div>
-            </div>
+              <div class="project-info">
+                <div class="project-header">
+                  <h3>Branchify</h3>
+                  <span class="public-badge">Public</span>
+                </div>
+                <p class="forked-from">Forked from <u>Branchify</u></p>
+                <div class="tech-stack">
+                  <span class="tech javascript">JavaScript</span>
+                  <span class="tech java">Java</span>
+                  <span class="tech css">CSS</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="../page2/page2.html" class="project-card" target="_blank">
+              <div class="project-logo">
+                <img src="../img/nuguna_logo.png" alt="NUGUNA" />
+              </div>
+              <div class="project-info">
+                <div class="project-header">
+                  <h3>NUGUNA</h3>
+                  <span class="public-badge">Public</span>
+                </div>
+                <p class="forked-from">Forked from <u>nuguna</u></p>
+                <div class="tech-stack">
+                  <span class="tech javascript">JavaScript</span>
+                  <span class="tech java">Java</span>
+                  <span class="tech python">Python</span>
+                </div>
+              </div>
+            </a>
           </div>
-        </div>
-      </div>
-      <div class="group-7">
-        <div class="overlap-3">
-          <div class="text-wrapper-15">Commity</div>
-          <div class="ellipse-5"></div>
-          <div class="ellipse-6"></div>
-        </div>
-      </div>
-      <div class="overlap-4">
-        <div class="text-wrapper-16">새 프로젝트</div>
-        <div class="text-wrapper-16">새 프로젝트</div>
-        <div class="text-wrapper-16">새 프로젝트</div>
-      </div>
-      <div class="text-wrapper-17">나의 프로젝트</div>
-      <div class="group-8">
-        <div class="overlap-5">
-          <div class="ellipse-7"></div>
-          <img class="image-2" src="img/image-62.png" />
-        </div>
-      </div>
+        </section>
+      </main>
     </div>
+
+    <script src="page1.js"></script>
   </body>
 </html>
