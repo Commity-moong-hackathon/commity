@@ -20,7 +20,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 60px;
 }
 
 .logo {
@@ -62,7 +61,6 @@ body {
 /* Main Section */
 .main {
   display: flex;
-  margin-top: 60px;
   gap: 40px;
 }
 
@@ -298,4 +296,12 @@ body {
 .card-text {
   font-size: 14px;
   line-height: 1.5;
+}
+
+.logo-img {
+  height: 200px; /* 원하는 높이로 조정 */
+  width: auto; /* 비율 유지 */
+  object-fit: contain;
+  display: block;
+  margin-left: -10px
 }
