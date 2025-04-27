@@ -48,44 +48,65 @@
           </div>
 
           <div class="task-container">
-            <button class="task facebook-login">
+            <button class="task facebook-login"  data-tag="인증" data-progress="진행중" data-deadline="25-9-10" data-description="페이스북 로그인 기능을 구현합니다.">
               <span class="emoji-circle">🧑🏻‍💻</span>
               <span class="task-title">Facebook Login</span>
+              <span class="pink-circle">🐯</span> 
               <span class="arrow">></span>
             </button>
 
             <button class="task q1-bug-bash">
               <span class="emoji-circle">🐛</span>
               <span class="task-title">Q1 Bug Bash</span>
+              <span class="pink-circle">🐢</span> 
+              <span class="pink-circle">🥔</span> 
               <span class="arrow">></span>
             </button>
 
             <button class="task auth-setting">
               <span class="emoji-circle">🐛</span>
               <span class="task-title">Auth Setting</span>
+              <span class="pink-circle">🥔</span> 
               <span class="arrow">></span>
             </button>
 
             <button class="task debug-slow">
               <span class="emoji-circle">📈</span>
               <span class="task-title">Debug Slow Queries</span>
+              <span class="pink-circle">🥔</span> 
+              <span class="pink-circle">🐯</span> 
               <span class="arrow">></span>
             </button>
 
             <button class="task db-tuning">
               <span class="emoji-circle">💽</span>
               <span class="task-title">Database Tuning</span>
+              <span class="pink-circle">🍄</span> 
               <span class="arrow">></span>
             </button>
 
             <button class="task board-develop">
               <span class="emoji-circle">🐛</span>
               <span class="task-title">Board Develop</span>
+              <span class="pink-circle">🐢</span> 
               <span class="arrow">></span>
             </button>
           </div>
         </div>
       </main>
+      <div class="modal-overlay" id="modal" style="display: none;">
+        <div class="modal">
+          <button class="modal-close">&times;</button>
+          <div class="modal-content">
+            <h2 id="modal-title">Task 제목</h2>
+            <p><strong>🏷️ 태그:</strong> <span id="modal-tag" class="tag-pill1">-</span></p>
+            <p><strong>⏳ 진행 상황:</strong> <span id="modal-progress" class="tag-pill2">-</span></p>
+            <p><strong>📆 마감일:</strong> <span id="modal-deadline">-</span></p>
+            <p><strong>📋 요약:</strong> <span id="modal-description">-</span></p>
+          </div>
+        </div>
+      </div>
     </div>
+    <script src="./modal.js"></script>
   </body>
 </html>
