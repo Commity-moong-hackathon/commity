@@ -20,7 +20,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 60px;
+  margin-bottom: -30px;
 }
 
 .logo {
@@ -230,7 +230,7 @@ textarea::placeholder {
 }
 
 .upload-section {
-  margin-top: 20px;
+  margin-top: 5px;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -267,4 +267,12 @@ textarea::placeholder {
   margin-top: 5px;
   padding: 8px;
   font-size: 14px;
+}
+
+.logo-img {
+  height: 200px; /* 원하는 높이로 조정 */
+  width: auto; /* 비율 유지 */
+  object-fit: contain;
+  display: block;
+  margin-left: -10px
 }
