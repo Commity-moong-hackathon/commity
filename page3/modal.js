@@ -8,8 +8,8 @@ const modalDeadline = document.getElementById("modal-deadline");
 const modalDescription = document.getElementById("modal-description");
 const modalClose = document.querySelector(".modal-close");
 
-// 각 task의 화살표(>) 클릭 시 모달 열기
-document.querySelectorAll(".task .arrow").forEach(arrow => {
+// 각 task 클릭 시 모달 열기
+document.querySelectorAll(".task").forEach((arrow) => {
   arrow.addEventListener("click", (e) => {
     const task = e.target.closest(".task"); // 가장 가까운 task 가져오기
 
