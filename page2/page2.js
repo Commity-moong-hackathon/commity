@@ -1,11 +1,12 @@
 const branchDropdown = document.getElementById("branch-dropdown");
 const graphBox = document.querySelector(".graph-box");
-const graphImage = document.querySelector(".graph-img");
+const graphImage = document.getElementById("graph-img");
 const commitList = document.querySelector(".commit-list");
 
 const branchCommits = {
   main: {
     showGraph: true,
+    image: "../img/new_branch.png",
     commits: [
       { color: "blue", text: "feat: add user authentication feature" },
       { color: "green", text: "fix: resolve crash issue on login screen" },
@@ -46,7 +47,8 @@ const branchCommits = {
     ],
   },
   develop: {
-    showGraph: false,
+    showGraph: true,
+    image: "../img/new_branch_2.png",
     commits: [
       { color: "blue", text: "feat: add dashboard analytics" },
       { color: "blue", text: "feat: integrate real-time notifications" },
@@ -59,7 +61,8 @@ const branchCommits = {
     ],
   },
   "feature/login": {
-    showGraph: false,
+    showGraph: true,
+    image: "../img/new_branch_3.png",
     commits: [
       { color: "blue", text: "feat: implement login with Google" },
       { color: "blue", text: "feat: add remember-me functionality" },
@@ -70,32 +73,61 @@ const branchCommits = {
     ],
   },
   "hotfix/error": {
-    showGraph: false,
+    showGraph: true,
+    image: "../img/new_branch_4.png",
     commits: [
-      { color: "green", text: "fix: crash on logout" },
-      { color: "red", text: "docs: update hotfix deployment guide" },
-      { color: "green", text: "fix: incorrect 404 page redirection" },
-      { color: "green", text: "fix: null pointer issue on user fetch" },
-      { color: "yellow", text: "refactor: tighten input validation" },
+      { color: "blue", text: "feat: crash on logout" },
+      { color: "green", text: "fix: update hotfix deployment guide" },
+      { color: "red", text: "error: incorrect 404 page redirection" },
+      { color: "purple", text: "refactor: null pointer issue on user fetch" },
+      { color: "purple", text: "refactor: tighten input validation" },
     ],
   },
 };
 
-// 드롭다운 변경시 이벤트
-branchDropdown.addEventListener("change", (e) => {
-  const selectedBranch = e.target.value;
-  const branchData = branchCommits[selectedBranch];
+function renderCommitList(branchKey) {
+  const branch = branchCommits[branchKey];
+  if (!branch) return;
 
-  if (branchData.showGraph) {
-    graphImage.style.display = "block";
-  } else {
-    graphImage.style.display = "none";
+  // ✅ 항상 이미지 src는 바꾸고,
+  if (branch.image) {
+    graphImage.src = branch.image + `?t=${Date.now()}`; // 캐시 무력화
   }
 
-  commitList.innerHTML = branchData.commits
+  // ✅ 보여줄지 여부는 따로 설정
+  graphImage.style.display = branch.showGraph ? "block" : "none";
+
+  // 커밋 리스트 갱신
+  commitList.innerHTML = branch.commits
     .map(
-      (commit) =>
-        `<li><span class="dot ${commit.color}"></span> ${commit.text}</li>`
+      ({ color, text }) => `<li><span class="dot ${color}"></span> ${text}</li>`
     )
     .join("");
+}
+
+// 이벤트 리스너 등록
+branchDropdown.addEventListener("change", (e) => {
+  renderCommitList(e.target.value);
 });
+
+// 초기 렌더링
+renderCommitList(branchDropdown.value);
+
+// // 드롭다운 변경시 이벤트
+// branchDropdown.addEventListener("change", (e) => {
+//   const selectedBranch = e.target.value;
+//   const branchData = branchCommits[selectedBranch];
+
+//   if (branchData.showGraph) {
+//     graphImage.style.display = "block";
+//   } else {
+//     graphImage.style.display = "none";
+//   }
+
+//   commitList.innerHTML = branchData.commits
+//     .map(
+//       (commit) =>
+//         `<li><span class="dot ${commit.color}"></span> ${commit.text}</li>`
+//     )
+//     .join("");
+// });

@@ -68,7 +68,10 @@ body {
 /* Left Panel */
 .left-panel {
   width: 400px;
-  position: relative;
+  height: 730px; /* ✅ .graph-img의 max-height에 맞춰 고정 */
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 .welcome {
@@ -103,7 +106,7 @@ body {
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Graph and commit side by side */
+/* 그래프와 커밋을 나란히 */
 .graph-box {
   background: white;
   border-radius: 20px;
@@ -112,30 +115,53 @@ body {
   display: flex;
   align-items: flex-start;
   gap: 20px;
+  flex-grow: 1;
+  overflow: hidden;
 }
 
+/* 이미지 크기 자동, 줄어들지 않도록 */
 .graph-img {
-  width: 69px;
-  height: 575px;
+  width: 85px;
+  height: auto;
+  max-height: 700px;
+  object-fit: contain;
+  flex-shrink: 0;
+  display: block;
 }
 
+/* 커밋 목록을 이미지 높이에 맞춰 스크롤 가능하게 */
 .commit-list {
   list-style: none;
   margin: 0;
   padding: 0;
+  flex-grow: 1;
+  max-height: 550px; /* ✅ 이미지 높이에 맞춤 */
+  overflow-y: auto; /* ✅ 세로 스크롤 */
+  padding-right: 8px; /* ✅ 스크롤바 공간 확보 */
+  scrollbar-width: thin; /* Firefox */
+}
+
+/* 스크롤바 스타일 (크롬 전용) */
+.commit-list::-webkit-scrollbar {
+  width: 6px;
+}
+.commit-list::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
 }
 
 .commit-list li {
-  font-size: 12px;
-  margin-bottom: 15px;
+  font-size: 14px; /* ✅ 텍스트 크게 */
+  line-height: 1.1; /* ✅ 줄간격 여유롭게 */
+  margin-bottom: 12px; /* ✅ 항목 간 간격 증가 */
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 10px; /* ✅ 도트와 텍스트 사이 간격 증가 */
 }
 
 .commit-list .dot {
-  width: 10px;
-  height: 10px;
+  width: 12px; /* ✅ 도트 약간 크게 */
+  height: 12px;
   border-radius: 50%;
 }
 

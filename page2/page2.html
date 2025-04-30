@@ -41,6 +41,7 @@
             </p>
           </div>
 
+          <!-- 브랜치 선택 -->
           <div class="branch-select">
             <label for="branch-dropdown">브랜치를 선택해주세요 </label>
             <select id="branch-dropdown" class="branch-dropdown">
@@ -51,80 +52,12 @@
             </select>
           </div>
 
+          <!-- 브랜치 그래프 및 커밋 리스트 -->
           <div class="graph-box">
-            <img src="../img/new_branch.png" class="graph-img" />
-            <ul class="commit-list">
-              <li>
-                <span class="dot blue"></span> feat: add user authentication
-                feature
-              </li>
-              <li>
-                <span class="dot green"></span> fix: resolve crash issue on
-                login screen
-              </li>
-              <li>
-                <span class="dot red"></span> docs: update README with new setup
-                instructions
-              </li>
-              <li>
-                <span class="dot blue"></span> feat: reformat codebase using
-                Prettier
-              </li>
-              <li>
-                <span class="dot yellow"></span> refactor: simplify API request
-                handling
-              </li>
-              <li>
-                <span class="dot blue"></span> feat: add unit tests for
-                authentication service
-              </li>
-              <li>
-                <span class="dot red"></span> docs: remove unused dependencies
-              </li>
-              <li>
-                <span class="dot blue"></span> feat: implement dark mode toggle
-              </li>
-              <li>
-                <span class="dot blue"></span> feat: correct typo in error
-                message
-              </li>
-              <li>
-                <span class="dot green"></span> fix: add API documentation for
-                user endpoints
-              </li>
-              <li>
-                <span class="dot blue"></span> style: fix indentation issues in
-                CSS
-              </li>
-              <li>
-                <span class="dot purple"></span> chore: optimize image loading
-                performance
-              </li>
-              <li>
-                <span class="dot blue"></span> test: improve test coverage for
-                user profile component
-              </li>
-              <li>
-                <span class="dot green"></span> fix: update CI configuration for
-                faster builds
-              </li>
-              <li>
-                <span class="dot purple"></span> chore: add search functionality
-                to navbar
-              </li>
-              <li>
-                <span class="dot yellow"></span> refactor: address memory leak
-                in data processing module
-              </li>
-              <li>
-                <span class="dot blue"></span> feat: create contribution guide
-                for new developers
-              </li>
-              <li>
-                <span class="dot yellow"></span> refactor: update button styles
-                to match design system
-              </li>
-            </ul>
+            <!-- 이 이미지 src는 JS에서 바뀜 -->
+            <img id="graph-img" src="../img/new_branch.png" class="graph-img" />
+            <!-- 커밋 목록도 JS에서 채워짐 -->
+            <ul class="commit-list"></ul>
           </div>
         </div>
 
