@@ -5,6 +5,8 @@
     <link rel="icon" type="image/png" href="../img/logo-square.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./page4.css" />
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script defer src="./scripts.js"></script>
     <title>Commity - Project</title>
   </head>
   <body>
@@ -32,8 +34,8 @@
       <main class="main">
         <div class="builder-mode">
           <div class="tab">
-            <button class="tab-btn active">Builder</button>
-            <button class="tab-btn">Auto</button>
+            <button class="tab-btn active">README.md</button>
+            <button class="tab-btn">AI로 완성하기</button>
           </div>
         </div>
         <div class="editor-layout">
@@ -49,14 +51,16 @@
               <li class="section-item">링크</li>
               <li class="section-item">뱃지</li>
               <li class="section-item">코드 작성</li>
+              <li class="section-item">줄 띄움</li> 
             </ul>
             <button class="add-section">+</button>
           </aside>
       
           <section class="editor">
-            <p class="editor-placeholder">
-              콘텐츠를 편집하려면 왼쪽 사이드바에서 섹션을 선택해 주세요.
-            </p>
+            <div class="tab-row2">
+                <span class="tab-label active">Malgamii🥔의 README를 작성해보세요!</span>
+              </div>
+            <textarea id="editor-area" class="editor-area" placeholder="여기에 Markdown을 입력하세요."></textarea>
           </section>
       
           <section class="preview">
@@ -70,4 +74,6 @@
           </section>
         </div>
       </main>
+
+      <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
       
