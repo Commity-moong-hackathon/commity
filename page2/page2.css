@@ -20,7 +20,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: ;
+  margin-bottom: 0px;
 }
 
 .logo {
@@ -70,6 +70,7 @@ body {
   width: 400px;
   height: 730px; /* ✅ .graph-img의 max-height에 맞춰 고정 */
   overflow: hidden;
+  border-radius: 20px;
   display: flex;
   flex-direction: column;
 }
@@ -111,7 +112,6 @@ body {
   background: white;
   border-radius: 20px;
   padding: 15px;
-  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.15);
   display: flex;
   align-items: flex-start;
   gap: 20px;
@@ -135,7 +135,7 @@ body {
   margin: 0;
   padding: 0;
   flex-grow: 1;
-  max-height: 550px; /* ✅ 이미지 높이에 맞춤 */
+  max-height: 560px;
   overflow-y: auto; /* ✅ 세로 스크롤 */
   padding-right: 8px; /* ✅ 스크롤바 공간 확보 */
   scrollbar-width: thin; /* Firefox */
@@ -267,14 +267,28 @@ body {
 
 .diff-content {
   background: white;
+  max-height: 440px; /* ✅ 스크롤이 생길 최대 높이 */
+  overflow-y: auto; /* ✅ 내부 스크롤 활성화 */
   border-radius: 20px;
-  padding: 20px;
+  padding: 10px;
   box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.15);
+  scrollbar-width: thin; /* Firefox */
 }
 
+/* 스크롤바 스타일 (크롬 전용) */
+.commit-list::-webkit-scrollbar {
+  width: 6px;
+}
+.commit-list::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+}
+
+/* 이미지 스타일도 조정 */
 .diff-img {
   width: 100%;
-  border-radius: 10px;
+  height: auto;
+  display: block;
 }
 
 .diff-header {
@@ -309,13 +323,6 @@ body {
   font-size: 14px;
   color: #000;
   font-weight: 400;
-}
-
-.diff-content {
-  background: white;
-  border-radius: 20px;
-  padding: 20px;
-  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.15);
 }
 
 .diff-img {

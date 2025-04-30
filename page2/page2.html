@@ -47,7 +47,7 @@
             <select id="branch-dropdown" class="branch-dropdown">
               <option value="main">main</option>
               <option value="develop">develop</option>
-              <option value="feature/login">feature/login</option>
+              <option value="feature/OAuth">feature/OAuth</option>
               <option value="hotfix/error">hotfix/error</option>
             </select>
           </div>
@@ -93,8 +93,8 @@
                 <div class="diff-title">
                   <h2 class="diff-file-title">Diff File</h2>
                   <div class="diff-feature">
-                    <span class="dot blue"></span>
-                    <span class="feature-text"
+                    <span id="diff-feature-dot" class="dot blue"></span>
+                    <span id="diff-feature-text" class="feature-text"
                       >feat: add user authentication feature</span
                     >
                   </div>
@@ -105,7 +105,11 @@
               </div>
 
               <div class="diff-content">
-                <img src="../img/diff-file.png" class="diff-img" />
+                <img
+                  id="diff-img"
+                  src="../img/diff_file_1.png"
+                  class="diff-img"
+                />
               </div>
             </div>
           </div>
