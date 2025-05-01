@@ -1,225 +1,223 @@
 /* 초기화 */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    background: #f3f3f3;
-    font-family: "Pretendard Variable", sans-serif;
-  }
-  
-  .container {
-    width: 1440px;
-    margin: 0 auto;
-    padding: 20px 40px;
-  }
-  
-  /* 헤더 */
-  .header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: -30px;
-  }
-  
-  .logo-img {
-    height: 200px; /* 원하는 높이로 조정 */
-    width: auto; /* 비율 유지 */
-    object-fit: contain;
-    display: block;
-    margin-left: -17px;
-  }
-  
-  
-  .nav {
-    display: flex;
-    gap: 100px;
-  }
-  
-  .nav-item {
-    font-size: 20px;
-    font-weight: 600;
-    text-decoration: none;
-    color: #000;
-  }
-  
-  .profile {
-    position: relative;
-  }
-  
-  /* 메인 영역 */
-  .main {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-  
-  .builder-mode {
-    display: flex;
-    gap: 20px;
-  }
-  
-  .tab {
-    display: flex;
-    gap: 24px;
-  }
-  
-  .tab-btn {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 8px;
-    background-color: #e7e7e7;
-    font-weight: 600;
-    cursor: pointer;
-    margin-left: -17px;
-  }
-  
-  .tab-btn.active {
-    color: #f1502f;
-    background-color: #f2bfb1;
-  }
-  
-  .editor-layout {
-    display: flex;
-    gap: 20px;
-    height: 600px;
-    margin-left: -17px;
-  }
-  
-  /* 왼쪽 사이드바 */
-  .sidebar {
-    flex: 0 0 260px;
-    background-color: white;
-    border-radius: 12px;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-  }
-  
-  .search-box {
-    padding: 8px 12px;
-    border: 1px solid #ddd;
-    border-radius: 6px;
-    font-size: 14px;
-  }
-  
-  .section-list {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    flex: 1;
-  }
-  
-  .section-item {
-    padding: 10px;
-    background: #f8f8f8;
-    border-radius: 6px;
-    cursor: pointer;
-    font-weight: 500;
-    text-align: left;
-  }
-  
-  .add-section {
-    margin-top: 10px;
-    background: #f1502f;
-    color: white;
-    border: none;
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    font-size: 20px;
-    line-height: 30px;
-    text-align: center;
-    cursor: pointer;
-    align-self: center;
-  }
-  
-  /* 에디터 영역 */
-  .editor {
-    flex: 1;
-    background-color: white;
-    border-radius: 12px;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-    font-size: 14px;
-    color: #555;
-  }
-  
-  .editor-placeholder {
-    color: #f1502f;
-    text-align: center;
-    margin-top: 40%;
-  }
-  
-  .editor-area {
-    width: 100%;
-    height: 500px;              /* 고정된 높이 */
-    resize: none;               /* 크기 조절 비활성화 */
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 16px;
-    font-size: 16px;
-    line-height: 1.5;
-    font-family: inherit;
-    background-color: #fff;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  /* 프리뷰 영역 */
-  .preview {
-    flex: 1;
-    background-color: white;
-    border-radius: 12px;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .tab-row {
-    display: flex;
-    gap: 16px;
-    margin-bottom: 10px;
-  }
-  
-  .tab-label {
-    font-weight: 600;
-    color: #aaa;
-    cursor: pointer;
-  }
-  
-  .tab-label.active {
-    color: #f1502f;
-  }
-  
-  .preview-box {
-    flex: 1;
-    border: 1px solid #ddd;
-    border-radius: 6px;
-    background-color: #fafafa;
-    margin-bottom: 10px;
-    padding: 20px; /* ✅ 내부 여백 추가 */
-    overflow-y: auto; /* 스크롤 필요 시 자동 */
-  }
-  
-  .download-btn {
-    align-self: flex-end;
-    padding: 6px 12px;
-    background: #ccc;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-  }
-  
-  .tab-row2 {
-    display: flex;
-    gap: 16px;
-    margin-bottom: 10px;
-  }
+body {
+  background: #f3f3f3;
+  font-family: "Pretendard Variable", sans-serif;
+}
 
-  
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 50px;
+  padding-top: 0;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-img {
+  height: 130px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+  margin-left: -7px;
+}
+
+.nav {
+  display: flex;
+  gap: 100px;
+}
+
+.nav-item {
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #000;
+}
+
+.profile-img {
+  position: relative;
+  width: 40px;
+  height: 40px;
+}
+
+/* 메인 영역 */
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.builder-mode {
+  display: flex;
+  gap: 20px;
+}
+
+.tab {
+  display: flex;
+  gap: 24px;
+}
+
+.tab-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #e7e7e7;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+  color: #000;
+}
+
+.tab-btn.active {
+  color: #f1502f;
+  background-color: #f2bfb1;
+}
+
+.editor-layout {
+  display: flex;
+  gap: 20px;
+  height: 600px;
+}
+
+/* 왼쪽 사이드바 */
+.sidebar {
+  flex: 0 0 260px;
+  background-color: white;
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.search-box {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.section-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+
+.section-item {
+  padding: 10px;
+  background: #f8f8f8;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  text-align: left;
+}
+
+.add-section {
+  margin-top: 10px;
+  background: #f1502f;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  cursor: pointer;
+  align-self: center;
+}
+
+/* 에디터 영역 */
+.editor {
+  flex: 1;
+  background-color: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  font-size: 14px;
+  color: #555;
+}
+
+.editor-placeholder {
+  color: #f1502f;
+  text-align: center;
+  margin-top: 40%;
+}
+
+.editor-area {
+  width: 100%;
+  height: 500px; /* 고정된 높이 */
+  resize: none; /* 크기 조절 비활성화 */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: inherit;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* 프리뷰 영역 */
+.preview {
+  flex: 1;
+  background-color: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+}
+
+.tab-row {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 10px;
+}
+
+.tab-label {
+  font-weight: 600;
+  color: #aaa;
+  cursor: pointer;
+}
+
+.tab-label.active {
+  color: #f1502f;
+}
+
+.preview-box {
+  flex: 1;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background-color: #fafafa;
+  margin-bottom: 10px;
+  padding: 20px; /* ✅ 내부 여백 추가 */
+  overflow-y: auto; /* 스크롤 필요 시 자동 */
+}
+
+.download-btn {
+  align-self: flex-end;
+  padding: 6px 12px;
+  background: #ccc;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.tab-row2 {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 10px;
+}

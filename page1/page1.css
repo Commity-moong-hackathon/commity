@@ -10,54 +10,43 @@ body {
 }
 
 .container {
-  width: 100%;
-  max-width: 1440px;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 20px 40px;
+  padding: 20px 50px;
+  padding-top: 0;
 }
 
+/* Header */
 .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: -30px;
 }
 
-.logo {
-  font-size: 36px;
-  font-weight: 700;
+.logo-img {
+  height: 130px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+  margin-left: -7px;
 }
 
-.nav-menu {
+.nav {
   display: flex;
   gap: 100px;
 }
 
-.menu-item {
+.nav-item {
   font-size: 20px;
   font-weight: 600;
-  cursor: pointer;
-}
-
-.profile {
-  position: relative;
+  text-decoration: none;
+  color: #000;
 }
 
 .profile-img {
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-.notification-dot {
-  position: absolute;
-  width: 10px;
-  height: 10px;
-  background-color: #f1502f;
-  border-radius: 50%;
-  top: 0;
-  right: 0;
+  position: relative;
+  width: 40px;
+  height: 40px;
 }
 
 .main {
@@ -267,12 +256,4 @@ textarea::placeholder {
   margin-top: 5px;
   padding: 8px;
   font-size: 14px;
-}
-
-.logo-img {
-  height: 200px; /* 원하는 높이로 조정 */
-  width: auto; /* 비율 유지 */
-  object-fit: contain;
-  display: block;
-  margin-left: -10px
 }
