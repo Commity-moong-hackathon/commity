@@ -23,11 +23,11 @@
         </div>
         <nav class="nav">
           <a href="../page3/page3.html" class="nav-item">대쉬보드</a>
-          <a href="#" class="nav-item">깃 컨벤션 추천 받기</a>
-          <a href="#" class="nav-item">리드미 제작하기</a>
+          <a href="../page5/page5.html" class="nav-item">깃 컨벤션 추천 받기</a>
+          <a href="../page4/page4.html" class="nav-item">리드미 제작하기</a>
         </nav>
         <div class="profile">
-          <img src="../img/person.png" alt="Profile" class="profile" />
+          <img src="../img/person.png" alt="Profile" class="profile-img" />
         </div>
       </header>
 
@@ -35,7 +35,7 @@
         <div class="builder-mode">
           <div class="tab">
             <button class="tab-btn active">README.md</button>
-            <button class="tab-btn">AI로 완성하기</button>
+            <a href="../page5/page5.html" class="tab-btn">AI로 완성하기</a>
           </div>
         </div>
         <div class="editor-layout">
@@ -51,29 +51,36 @@
               <li class="section-item">링크</li>
               <li class="section-item">뱃지</li>
               <li class="section-item">코드 작성</li>
-              <li class="section-item">줄 띄움</li> 
+              <li class="section-item">줄 띄움</li>
             </ul>
             <button class="add-section">+</button>
           </aside>
-      
+
           <section class="editor">
             <div class="tab-row2">
-                <span class="tab-label active">Malgamii🥔의 README를 작성해보세요!</span>
-              </div>
-            <textarea id="editor-area" class="editor-area" placeholder="여기에 Markdown을 입력하세요."></textarea>
+              <span class="tab-label active"
+                >Malgamii🥔의 README를 작성해보세요!</span
+              >
+            </div>
+            <textarea
+              id="editor-area"
+              class="editor-area"
+              placeholder="여기에 Markdown을 입력하세요."
+            ></textarea>
           </section>
-      
+
           <section class="preview">
             <div class="tab-row">
               <span class="tab-label active">Preview</span>
               <span class="tab-label">Raw</span>
             </div>
             <div class="preview-box"></div>
-            <button class="download-btn">파일 다운로드
-            </button>
+            <button class="download-btn">파일 다운로드</button>
           </section>
         </div>
       </main>
 
       <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-      
+    </div>
+  </body>
+</html>
