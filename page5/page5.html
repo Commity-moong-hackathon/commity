@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="../img/logo-square.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./page2.css" />
+    <title>Commity - Project</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="logo">
+          <a href="../page1/page1.html" class="logo-link">
+            <img
+              src="../img/commity_logo.png"
+              alt="Commity 로고"
+              class="logo-img"
+            />
+          </a>
+        </div>
+        <nav class="nav">
+          <a href="../page3/page3.html" class="nav-item">대쉬보드</a>
+          <a href="#" class="nav-item">깃 컨벤션 추천 받기</a>
+          <a href="../page4/page4.html" class="nav-item">리드미 제작하기</a>
+        </nav>
+        <div class="profile">
+          <img src="../img/person.png" alt="Profile" class="profile-img" />
+        </div>
+      </header>
+
+      <section class="main">
+        <!-- Left -->
+        <div class="left-panel">
+          <div class="welcome">
+            <p class="welcome-text">
+              돌아오셨군요 🥳<br />
+              <strong
+                >malgamii의 <span class="bold">Commity</span> 입니다.</strong
+              >
+            </p>
+          </div>
+
+          <!-- 브랜치 선택 -->
+          <div class="branch-select">
+            <label for="branch-dropdown">브랜치를 선택해주세요 </label>
+            <select id="branch-dropdown" class="branch-dropdown">
+              <option value="main">main</option>
+              <option value="develop">develop</option>
+              <option value="feature/OAuth">feature/OAuth</option>
+              <option value="hotfix/error">hotfix/error</option>
+            </select>
+          </div>
+
+          <!-- 브랜치 그래프 및 커밋 리스트 -->
+          <div class="graph-box">
+            <!-- 이 이미지 src는 JS에서 바뀜 -->
+            <img id="graph-img" src="../img/new_branch.png" class="graph-img" />
+            <!-- 커밋 목록도 JS에서 채워짐 -->
+            <ul class="commit-list"></ul>
+          </div>
+        </div>
+
+        <!-- Right -->
+        <div class="right-panel">
+          <div class="commit-summary">
+            <h2>Commit Summary</h2>
+            <div class="commit-cards">
+              <div class="card">
+                <div class="card-date">2025.03.24</div>
+                <p class="card-text">
+                  🐛 로그인 시 오류가 발생하던 문제를 수정했어요!<br />이제 더
+                  매끄럽게 로그인할 수 있어요👏
+                </p>
+              </div>
+              <div class="card">
+                <div class="card-date">2025.03.24</div>
+                <p class="card-text">
+                  📕 README 파일을 업데이트했어요!<br />환경 설정 방법이 한눈에
+                  보이게 정리했어요
+                </p>
+              </div>
+              <div class="card">
+                <div class="card-date">2025.03.24</div>
+                <p class="card-text">
+                  🛠️ 설정 페이지 UI를 새롭게 다듬었어요!<br />더 깔끔하고 보기
+                  쉬워졌어요👏
+                </p>
+              </div>
+            </div>
+            <div class="diff-file">
+              <div class="diff-header">
+                <div class="diff-title">
+                  <h2 class="diff-file-title">Diff File</h2>
+                  <div class="diff-feature">
+                    <span id="diff-feature-dot" class="dot blue"></span>
+                    <span id="diff-feature-text" class="feature-text"
+                      >feat: add user authentication feature</span
+                    >
+                  </div>
+                </div>
+                <span class="commit-id"
+                  >commit id: <a href="#">b2e1771</a></span
+                >
+              </div>
+
+              <div class="diff-content">
+                <img
+                  id="diff-img"
+                  src="../img/diff_file_1.png"
+                  class="diff-img"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="./page2.js"></script>
+  </body>
+</html>
