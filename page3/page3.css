@@ -263,3 +263,16 @@ body {
   font-size: 13px;
   font-weight: 600;
 }
+
+.tag-pill3 {
+  display: inline-block;
+  background-color: #f6f3f3;
+  color: #333;
+  padding: 2px 8px;              /* 작게 */
+  margin: 2px 5px 2px 0;         /* 간격을 좌우로 분리 */
+  border-radius: 999px;          /* 완전한 pill 모양 */
+  font-size: 12px;               /* 작고 깔끔한 폰트 */
+  font-weight: 500;
+  line-height: 1.5;
+  white-space: nowrap;           /* 줄바꿈 방지 */
+}
